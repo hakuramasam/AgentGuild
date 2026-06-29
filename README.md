@@ -4,7 +4,7 @@ A collection of AI agent skills for blockchain and web3 development, featuring E
 
 ## Features
 
-- **Thirdweb AI Agent** - AI agent on Base Mainnet with 31 API tools
+- **Agent Guild** - AI agent on Base Mainnet with 31 API tools
 - **ERC-402 Payment System** - USDC-based access control with fixed receiver
 - **Data-Driven Pricing** - Costs based on actual Base Mainnet gas analysis
 - **Four-Tier System** - Free, Lightweight ($0.01), Heavyweight ($0.10), Ultra-Heavy ($0.50)
@@ -13,7 +13,7 @@ A collection of AI agent skills for blockchain and web3 development, featuring E
 
 | Skill | Description |
 |-------|-------------|
-| [thirdweb-ai-agent](skills/thirdweb-ai-agent/SKILL.md) | Create, deploy, and manage AI agents on Base Mainnet with ERC-402 payments |
+| [agent-guild](skills/agent-guild/SKILL.md) | Create, deploy, and manage AI agents on Base Mainnet with ERC-402 payments |
 
 ## Payment System
 
