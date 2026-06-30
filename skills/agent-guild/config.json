@@ -1,0 +1,57 @@
+{
+  "name": "Agent Guild",
+  "version": "1.0.0",
+  "description": "Production-ready AI agent on Base Mainnet with ERC-402 payment system",
+  "chainId": 8453,
+  "rpcUrl": "https://mainnet.base.org",
+  "payment": {
+    "x402Receiver": "0x21c2b22b7dD5634Af6fc0bc5489965bb906a9959",
+    "usdcAddress": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "usdcDecimals": 6
+  },
+  "rateLimiting": {
+    "requests": 100,
+    "windowMs": 60000,
+    "blockDuration": 60
+  },
+  "timeouts": {
+    "default": 30000,
+    "maxRetries": 3,
+    "retryDelay": 1000,
+    "backoff": 2
+  },
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "output": "console"
+  },
+  "costs": {
+    "free": "0",
+    "lightweight": "10000",
+    "heavyweight": "100000",
+    "ultraHeavy": "500000"
+  },
+  "tools": {
+    "total": 37,
+    "free": 1,
+    "lightweight": 24,
+    "heavyweight": 10,
+    "ultraHeavy": 2
+  },
+  "features": {
+    "inputValidation": true,
+    "rateLimiting": true,
+    "timeoutHandling": true,
+    "retryLogic": true,
+    "errorHandling": true,
+    "logging": true,
+    "metrics": false
+  },
+  "environment": {
+    "THIRDWEB_CLIENT_ID": "${THIRDWEB_CLIENT_ID}",
+    "THIRDWEB_SECRET_KEY": "${THIRDWEB_SECRET_KEY}",
+    "REDIS_URL": "redis://localhost:6379",
+    "PORT": 3000,
+    "METRICS_PORT": 9090
+  }
+}
